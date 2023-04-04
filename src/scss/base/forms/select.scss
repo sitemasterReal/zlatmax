@@ -1,0 +1,159 @@
+
+.select {
+	min-width: 0;
+	position: relative;
+
+	&__body {
+		position: relative;
+	}
+
+	&__title {
+		color: inherit;
+		text-align: center;
+		border: 1px solid #d9d9d9;
+		background-color: #fff;
+		cursor: pointer;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	&__value {
+		display: flex;
+    flex-direction: row-reverse;
+		min-width: rem(260);
+		align-items: center;
+    justify-content: flex-start;
+		height: rem(30);
+		padding: 0 0 0 rem(20);
+    text-align: left;
+		gap: rem(10);
+		> * {
+			flex: 1 1 auto;
+		}
+		&:after {
+			content: "";
+			align-self: stretch;
+			flex: 0 0 10px;
+			transition: all 0.3s ease 0s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+
+	&__options {
+		color: #000;
+		position: absolute;
+		top: calc(100% - rem(1));
+		border-radius: 0 0 4px 4px;
+		min-width: 100%;
+		left: 0;
+		background-color: #fff;
+		border-top: 0;
+		border: 1px solid #d9d9d9;
+		border-top: 0;
+		padding: 10px 0px 5px 0px;
+	}
+
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		max-height: 200px;
+
+	}
+	
+	&__option {
+		width: 100%;
+		cursor: pointer;
+		padding: rem(5) rem(15) rem(5) rem(40);
+		color: inherit;
+		&._select-selected {
+			background-color: #eee;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: #d9d9d9;
+			}
+		}
+	}
+
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&._select-open {
+		z-index: 5;
+	}
+
+  &_control {
+		.select__title {
+			border: 1px solid rgba(4, 4, 4, 0.3);
+			border-radius: 3px;
+		}
+		.select__value {
+			height: rem(40);
+			color: rgba(0, 0, 0, 0.5);
+			&::before {
+				font-size: rem(8);
+				@extend %ic;
+				content: "\e900";
+        padding: rem(16);
+        background-color: #000;
+        color: #fff;
+			}
+		}
+		.select__option {
+			color: rgba(0, 0, 0, 0.5);
+      text-align: left;
+			@media (any-hover: hover) {
+				&:hover {
+					color: rgba(0, 0, 0, 1);
+				}
+			}
+		}
+    &._select-open {
+      .select__value {
+        &::before {
+          transform: rotate(-180deg);
+          background-color: #fff;
+          padding: rem(15);
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+	}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}
