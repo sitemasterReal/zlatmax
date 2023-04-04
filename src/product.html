@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Картка товара"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page page__inner">
+      <div class="page__header">
+        <div class="page__container">
+          <nav class="page__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Головна</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Розділочні ножі</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">Ніж Снігур</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product__container">
+          <div class="product__main main-product">
+            <div class="main-product__images images-product">
+              <div class="images-product__slider">
+                <div class="images-product__swiper">
+                  <div class="images-product__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="images-product__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="images-product__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="images-product__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="images-product__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="images-product__thumbs thumbs-images">
+                <div class="thumbs-images__swiper">
+                  <div class="thumbs-images__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="thumbs-images__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="thumbs-images__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="thumbs-images__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                  <div class="thumbs-images__slide-ibg">
+                    <img src="@img/phoduct/01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="main-product__body body-product">
+              <div class="body-product__header header-product">
+                <div class="header-product__line">
+                  <h1 class="header-product__title">Ніж Снігур</h1>
+                  <a href="" class="header-product__link _icon-compare"></a>
+                  <a href="" class="header-product__link _icon-favorite"></a>
+                </div>
+                <div class="header-product__rating rating rating_set">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input type="radio" class="rating__item" value="1" name="rating">
+                      <input type="radio" class="rating__item" value="2" name="rating">
+                      <input type="radio" class="rating__item" value="3" name="rating">
+                      <input type="radio" class="rating__item" value="4" name="rating">
+                      <input type="radio" class="rating__item" value="5" name="rating">
+                    </div>
+                  </div>
+                  <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="body-product__table table-product">
+                <div class="table-product__label">Артикул:</div>
+                <div class="table-product__value">AF0000001952</div>
+                <div class="table-product__label">Торгова марка:</div>
+                <div class="table-product__value">WUESTHOF (Німеччина)</div>
+                <div class="table-product__label">Серія:</div>
+                <div class="table-product__value">Ножі серії Classic Ikon</div>
+                <div class="table-product__label">Бонусні бали: </div>
+                <div class="table-product__value">38</div>
+              </div>
+              <div class="body-product__options options-product">
+                <div class="options-product__label">Сталь</div>
+                <div class="options-product__value">
+                  <select name="form[]" data-class-modif="control">
+                    <option value="1" selected>Пункт №1</option>
+                    <option value="2">Пункт №2</option>
+                    <option value="3">Пункт №3</option>
+                    <option value="4">Пункт №4</option>
+                  </select>
+                </div>
+                <div class="options-product__label">Рукоять</div>
+                <div class="options-product__value">
+                  <select name="form[]" data-class-modif="control">
+                    <option value="1" selected>Пункт №1</option>
+                    <option value="2">Пункт №2</option>
+                    <option value="3">Пункт №3</option>
+                    <option value="4">Пункт №4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-product__actions actions-product">
+                <div class="actions-product__price">1770 ₴</div>
+                <div class="actions-product__row">
+
+                  <div data-quantity class="actions-product__quantity quantity">
+                    <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                    <div class="quantity__input">
+                      <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                    </div>
+                    <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                  </div>
+
+                  <div class="actions-product__buttons">
+                    <a href="" class="actions-product__cart button"><span class="_icon-cart">У кошик</span></a>
+                    <a href="" class="actions-product__button button button_black">Купити в 1 клік</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-tabs="992" class="product__info product-info">
+            <nav data-tabs-titles class="product-info__navigation">
+              <button type="submit" class="product-info__title _tab-active">Опис</button>
+              <button type="submit" class="product-info__title">Характеристики</button>
+              <button type="submit" class="product-info__title">Відгуки</button>
+            </nav>
+            <div data-tabs-body class="product-info__content">
+              <div class="product-info__body">
+                1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+              </div>
+              <div class="product-info__body">
+                2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+              </div>
+              <div class="product-info__body">
+                3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="page__similar-products similar-products">
+        @@include('html/_similar-products.htm',{
+        "title":"Схожі товари"
+        })
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
