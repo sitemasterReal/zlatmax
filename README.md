@@ -1,8 +1,7 @@
 # zlatmax
-Internet shop
+Zlatmax is site about knives. 
+Here, you'll find everything you need to know about knives.
 
-Верстка теми інтернет магазина ножів.
-
-Переглянути в браузері
+Online store with popup, sliders and spoilers. Applied dynamic adaptive.
 
 https://sitemasterreal.github.io/zlatmax/
